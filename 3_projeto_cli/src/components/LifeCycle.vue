@@ -14,11 +14,20 @@ export default {
         setTimeout(() => {
             this.nome = 'Péricles'
         }, 1000)
+
+        this.lifeCycle()
     },
     mounted() {
         setTimeout(() => {
             this.nome = 'Péricles'
         }, 2000)
+
+        this.lifeCycle()
+    },
+    methods: {
+        lifeCycle() {
+            console.log('Executou')
+        }
     }
 }
 </script>
